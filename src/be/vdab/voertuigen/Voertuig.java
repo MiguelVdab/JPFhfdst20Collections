@@ -1,6 +1,6 @@
 package be.vdab.voertuigen;
 
-public abstract class Voertuig implements Privaat, Milieu{
+public abstract class Voertuig implements Privaat, Milieu, Comparable<Voertuig> {
     private String polishouder = "onbepaald";
     private float kostprijs;
     private int pk;
@@ -75,18 +75,36 @@ public abstract class Voertuig implements Privaat, Milieu{
     }
 
     public void toon() {
-        System.out.println("polishouder: " +polishouder);
+        System.out.println("polishouder: " + polishouder);
         System.out.println("kostprijs: " + kostprijs);
         System.out.println("pk: " + pk);
         System.out.println("gemiddeld verbruik: " + gemVerbruik);
         System.out.println("nummerplaat: " + nummerplaat);
     }
+
     public abstract double getKyotoScore();
 
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Voertuig)) {
+            return false;
+        }
+        var v = (Voertuig) o;
+        return nummerplaat.equals(v.getNummerplaat());
+    }
+    @Override
+    public int hashCode() {
+        return nummerplaat.hashCode();
+    }
+    @Override
+    public int compareTo(Voertuig v) {
+        return nummerplaat.compareTo(v.getNummerplaat());
+    }
     @Override
     public void geefPrivateData() {
         System.out.println(polishouder + " " + nummerplaat);
     }
+
     @Override
     public void geefMilieuData() {
         System.out.println("Pk: " + pk + ", kostprijs: " + kostprijs + ", gemiddeld verbruik: " + gemVerbruik);
