@@ -5,6 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08d06696-c6e2-47a2-a66d-9c9196f725bc" name="Changes" comment="oefening landen klaar, voertuigen toegevoegd">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/vdab/VBHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/vdab/VoertuigenCMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/vdab/WinkelMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/vdab/beginletterOef/beginletterMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/vdab/tienkamperOef/Tienkamper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/vdab/tienkamperOef/TienkamperMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/vdab/winkel/Catalogus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/vdab/winkel/Mandje.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/vdab/winkel/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/vdab/voertuigen/Voertuig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/voertuigen/Voertuig.java" afterDir="false" />
     </list>
@@ -36,6 +46,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/migue/IdeaProjects/JPFhfdst20Collections/src/be/vdab/voertuigen"
   }
 }]]></component>
@@ -43,8 +54,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\migue\IdeaProjects\JPFhfdst20Collections\src\be\vdab\voertuigen" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Cursist 11\IdeaProjects\JPFhfdst20Collections\src" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.beginletterMain">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.vdab.Main" />
       <module name="JPFhfdst20Collections" />
@@ -58,8 +72,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VBArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.vdab.VBArrayList" />
+    <configuration name="TienkamperMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.vdab.tienkamperOef.TienkamperMain" />
+      <module name="JPFhfdst20Collections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.vdab.tienkamperOef.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VBHashMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.vdab.VBHashMap" />
       <module name="JPFhfdst20Collections" />
       <extension name="coverage">
         <pattern>
@@ -71,12 +98,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VBLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.vdab.VBLinkedList" />
+    <configuration name="VoertuigenCMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.vdab.VoertuigenCMain" />
       <module name="JPFhfdst20Collections" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="be.vdab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="beginletterMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.vdab.beginletterOef.beginletterMain" />
+      <module name="JPFhfdst20Collections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.vdab.beginletterOef.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,9 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.beginletterMain" />
+        <item itemvalue="Application.VBHashMap" />
+        <item itemvalue="Application.TienkamperMain" />
+        <item itemvalue="Application.VoertuigenCMain" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.VBLinkedList" />
-        <item itemvalue="Application.VBArrayList" />
       </list>
     </recent_temporary>
   </component>

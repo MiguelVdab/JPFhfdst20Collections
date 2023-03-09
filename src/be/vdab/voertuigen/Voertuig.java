@@ -85,21 +85,24 @@ public abstract class Voertuig implements Privaat, Milieu, Comparable<Voertuig> 
     public abstract double getKyotoScore();
 
     @Override
+    public int hashCode() {
+        return nummerplaat.hashCode();
+    }
+
+    @Override
     public boolean equals(Object o) {
-        if (!(o instanceof Voertuig)) {
+        if (!(o instanceof Voertuig voertuig)) {
             return false;
         }
         var v = (Voertuig) o;
         return nummerplaat.equals(v.getNummerplaat());
     }
-    @Override
-    public int hashCode() {
-        return nummerplaat.hashCode();
-    }
+
     @Override
     public int compareTo(Voertuig v) {
-        return nummerplaat.compareTo(v.getNummerplaat());
+            return nummerplaat.compareTo(v.getNummerplaat());
     }
+
     @Override
     public void geefPrivateData() {
         System.out.println(polishouder + " " + nummerplaat);
